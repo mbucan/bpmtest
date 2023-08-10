@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://jmix.io/schema/flowui/view">
+    <layout>
+        <formLayout id="form" width="100%">
+            <responsiveSteps>
+                <responsiveStep minWidth="0em" columns="1" labelsPosition="TOP"/>
+                <responsiveStep minWidth="32em" columns="1"/>
+                <responsiveStep minWidth="40em" columns="2" labelsPosition="TOP"/>
+                <responsiveStep minWidth="64em" columns="2"/>
+                <responsiveStep minWidth="80em" columns="3" labelsPosition="TOP"/>
+                <responsiveStep minWidth="96em" columns="3"/>
+            </responsiveSteps>
+        </formLayout>
+        <hbox id="actionsPanel" alignItems="END" height="100%">
+            <hbox id="testPanel" alignItems="END">
+                <label id="testLabel" title="Test Label"/>
+            </hbox>
+            <hbox id="outcomesPanel" classNames="buttons-panel"/>
+            <button id="claimAndResumeBtn" icon="GRAB"
+                    text="msg://io.jmix.bpmflowui.view.inputdialogform/claimAndResume"
+                    title="msg://io.jmix.bpmflowui.view.inputdialogform/claimAndResumeDescription"/>
+            <button id="claimAndCloseBtn" icon="GRAB" text="msg://io.jmix.bpmflowui.view.inputdialogform/claimAndClose"
+                    title="msg://io.jmix.bpmflowui.view.inputdialogform/claimAndCloseDescription"/>
+        </hbox>
+    </layout>
+</view>
