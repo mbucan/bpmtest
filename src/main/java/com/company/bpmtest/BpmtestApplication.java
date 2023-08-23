@@ -7,11 +7,13 @@ import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.component.page.Viewport;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
+import io.jmix.bpmflowui.view.inputdialogform.InputDialogTaskProcessForm;
 import io.jmix.flowui.view.ViewComponent;
 import io.jmix.flowui.view.ViewController;
 import io.jmix.flowui.view.ViewDescriptor;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
@@ -21,6 +23,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
@@ -63,10 +66,13 @@ public class BpmtestApplication implements AppShellConfigurator {
     }
 
     //Addded to override InputDialogTaskProcessForm
+/*
     @Bean
     @Primary
+    @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     BpmtestInputDialogTaskProcessForm bpmtestInputDialogTaskProcessForm() {
         return new BpmtestInputDialogTaskProcessForm();
     }
+*/
 
 }

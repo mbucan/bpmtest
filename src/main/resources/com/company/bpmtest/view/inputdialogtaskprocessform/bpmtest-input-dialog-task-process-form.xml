@@ -12,8 +12,8 @@
             </responsiveSteps>
         </formLayout>
         <hbox id="actionsPanel" alignItems="END" height="100%">
-            <hbox id="testPanel" alignItems="END">
-                <label id="testLabel" title="Test Label"/>
+            <hbox id="testPanel" alignItems="CENTER">
+                <div id="testIfOverriden" text="Overriden it is"/>
             </hbox>
             <hbox id="outcomesPanel" classNames="buttons-panel"/>
             <button id="claimAndResumeBtn" icon="GRAB"
